@@ -77,16 +77,14 @@ st.write('''<br><br>
 
 
 
-
-
 col11, col21, col31 = st.columns([4,4,4])
 
 with col11:
     pilih_tahun = st.multiselect(
 "Pilih Tahun",
-[2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024],
-max_selections = 10,
-default = [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024],
+[2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
+max_selections = 11,
+default = [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
 )
 
 with col21:
@@ -109,12 +107,13 @@ with col31:
 
 
 
+
 pilih_data1 = dataku[dataku['Tahun Artikel'].isin(pilih_tahun)]
 
-pilih_data2 = dataku[pilih_data1['Jurnal/Prosiding'].isin(pilih_jurnal_prosiding)]
+dataku = pilih_data1
 
 
-
+pilih_data2 = dataku[dataku['Jurnal/Prosiding'].isin(pilih_jurnal_prosiding)]
 
 dataku = pilih_data2
 
@@ -137,5 +136,13 @@ st.data_editor(
     },
     hide_index=True,
 )
+
+
+
+
+
+
+
+
 
 
