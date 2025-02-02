@@ -24,7 +24,7 @@ st.write('''<style>
 
 
 
-st.write('''<br><br><br><center><font color = "#0000ff" size = 5>KUMPULAN ARTIKEL (JURNAL & PROSIDING): PENGARUH RETURN ON ASSET (ROA) TERHADAP HARGA SAHAM<br><font color = 'red'>Artikel Terkumpul Sebanyak 20 Artikel</font></font></center>
+st.write('''<br><br><br><center><font color = "#0000ff" size = 5>KUMPULAN ARTIKEL (JURNAL & PROSIDING): PENGARUH RETURN ON ASSET (ROA) TERHADAP HARGA SAHAM<br><font color = 'red'>Artikel Terkumpul Sebanyak 30 Artikel</font></font></center>
 
 
 
